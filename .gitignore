@@ -1,0 +1,21 @@
+# Virtual environment
+echo_env/
+venv/
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Database
+*.db
+
+# Testing
+.pytest_cache/
+
+# IDE
+.vscode/
+
+echoverse_chat.pdf

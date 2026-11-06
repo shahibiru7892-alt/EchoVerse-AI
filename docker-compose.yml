@@ -1,0 +1,11 @@
+services:
+  echoverse:
+    build: .
+    container_name: echoverse-ai
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./database:/app/database
+    restart: unless-stopped

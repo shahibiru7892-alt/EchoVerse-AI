@@ -1,0 +1,138 @@
+/* Main background */
+.stApp {
+    background-color: #0b0f19;
+    color: white;
+}
+
+/* Main heading */
+h1 {
+    color: #a78bfa;
+    font-weight: bold;
+}
+
+/* Chat input */
+.stChatInput textarea {
+    background-color: #1e293b;
+    color: white;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #111827;
+}
+
+/* Buttons */
+.stButton button {
+    background-color: #7c3aed;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Chat messages */
+[data-testid="stChatMessage"] {
+    border-radius: 12px;
+    padding: 12px;
+}
+
+/* Improved Chat Message Design */
+
+[data-testid="stChatMessage"] {
+    background-color: #151c2c;
+    border: 1px solid #293449;
+    border-radius: 15px;
+    padding: 18px;
+    margin-bottom: 15px;
+}
+
+/* Chat Message Text */
+
+[data-testid="stChatMessage"] p {
+    color: #f1f5f9;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Chat Input Design */
+
+[data-testid="stChatInput"] {
+    border: 1px solid #7c3aed;
+    border-radius: 15px;
+}
+
+/* Chat Input Focus */
+
+[data-testid="stChatInput"]:focus-within {
+    border: 1px solid #a78bfa;
+    box-shadow: 0 0 10px rgba(124, 58, 237, 0.4);
+}
+
+/* Timestamp Design */
+
+[data-testid="stCaptionContainer"] {
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+/* Sidebar Heading */
+section[data-testid="stSidebar"] h1 {
+    color: #a78bfa;
+    font-size: 25px;
+}
+
+/* Sidebar Buttons */
+section[data-testid="stSidebar"] .stButton button {
+    background-color: #1e293b;
+    color: white;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Sidebar Button Hover */
+section[data-testid="stSidebar"] .stButton button:hover {
+    background-color: #7c3aed;
+    border-color: #a78bfa;
+    color: white;
+}
+
+/* Sidebar Divider */
+section[data-testid="stSidebar"] hr {
+    border-color: #334155;
+}
+
+/* Main Heading */
+h1 {
+    color: #a78bfa;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Welcome Message */
+h2 {
+    color: #c4b5fd;
+    font-weight: 600;
+}
+
+/* Download Button */
+.stDownloadButton button {
+    background-color: #7c3aed;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+/* Download Button Hover */
+.stDownloadButton button:hover {
+    background-color: #6d28d9;
+    color: white;
+    box-shadow: 0 0 12px rgba(124, 58, 237, 0.5);
+}
+
+/* Smooth Interface */
+.stApp {
+    transition: background-color 0.3s ease;
+}
