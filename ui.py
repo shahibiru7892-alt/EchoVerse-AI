@@ -676,10 +676,10 @@ with chat_display:
 with st.container(key="chat_input_container"):
 
     col1, col2, col3 = st.columns(
-        [0.75, 7.2, 0.85],
-        vertical_alignment="center"
+        [1, 8, 1],
+        vertical_alignment="center",
+        gap="small"
     )
-
     # IMAGE ATTACHMENT
 
     with col1:
