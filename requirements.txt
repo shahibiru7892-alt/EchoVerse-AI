@@ -7,3 +7,4 @@ sqlalchemy
 pytest
 requests
 reportlab
+streamlit-mic-recorder
