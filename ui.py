@@ -58,7 +58,15 @@ with open(css_path, encoding="utf-8") as f:
 
 
 # ==========================================
-# Chat input styling is maintained in assets/style.css.
+# CHAT INPUT CALLBACK
+# ==========================================
+
+def submit_chat_message():
+    """
+    Called when the user presses Enter
+    inside the chat input.
+    """
+    st.session_state.send_chat_message_requested = True
 
 
 # ==========================================
@@ -77,6 +85,9 @@ if "image_uploader_key" not in st.session_state:
 
 if "chat_message_input" not in st.session_state:
     st.session_state.chat_message_input = ""
+
+if "send_chat_message_requested" not in st.session_state:
+    st.session_state.send_chat_message_requested = False
 
 if st.session_state.get("clear_chat_input", False):
 
@@ -680,6 +691,7 @@ with st.container(key="chat_input_container"):
         vertical_alignment="center",
         gap="small"
     )
+
     # IMAGE ATTACHMENT
 
     with col1:
@@ -699,7 +711,8 @@ with st.container(key="chat_input_container"):
             "Message EchoVerse AI",
             placeholder="Message EchoVerse AI...",
             label_visibility="collapsed",
-            key="chat_message_input"
+            key="chat_message_input",
+            on_change=submit_chat_message
         )
 
     # SEND BUTTON
@@ -765,7 +778,10 @@ with st.container(key="chat_input_container"):
 # PROCESS CHAT INPUT
 # ==========================================
 
-if send_message:
+if send_message or st.session_state.send_chat_message_requested:
+
+    # Reset the Enter-key trigger
+    st.session_state.send_chat_message_requested = False
 
     user_input = typed_message.strip()
 
@@ -940,5 +956,3 @@ if st.session_state.get("focus_chat_input", False):
     )
 
     st.session_state.focus_chat_input = False
-
-    
