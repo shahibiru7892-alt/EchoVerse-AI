@@ -1129,3 +1129,276 @@ div[data-testid="stCode"] pre {
 .stCodeBlock {
     color: #E6D6FF !important;
 }
+
+/* ==========================================
+   ECHOVERSE AI - ANDROID RESPONSIVE FIX
+========================================== */
+
+/* Tablets and mobile devices */
+@media screen and (max-width: 768px) {
+
+    /* Main page spacing */
+    .block-container {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        padding-top: 12px !important;
+    }
+
+    /* Main heading */
+    .main-header h1 {
+        font-size: 30px !important;
+        line-height: 1.2 !important;
+    }
+
+    .main-header p {
+        font-size: 13px !important;
+        padding: 0 8px !important;
+    }
+
+    /* Welcome screen */
+    .welcome-container {
+        width: 100% !important;
+        margin: 25px auto !important;
+        padding: 24px 14px !important;
+        box-sizing: border-box !important;
+    }
+
+    .welcome-title {
+        font-size: 26px !important;
+        line-height: 1.3 !important;
+    }
+
+    .welcome-subtitle {
+        font-size: 14px !important;
+    }
+
+    .welcome-description {
+        font-size: 13px !important;
+    }
+
+    /* Category cards */
+    .category-card {
+        padding: 14px 8px !important;
+        min-height: 125px !important;
+    }
+
+    .category-card h4 {
+        font-size: 14px !important;
+    }
+
+    .category-card p {
+        font-size: 11px !important;
+    }
+
+    /* Chat messages */
+    [data-testid="stChatMessage"] {
+        padding: 10px !important;
+        gap: 8px !important;
+    }
+
+    [data-testid="stChatMessage"] p {
+        font-size: 14px !important;
+        line-height: 1.65 !important;
+        overflow-wrap: anywhere !important;
+    }
+
+    /* Code blocks */
+    [data-testid="stChatMessage"] pre {
+        max-width: 100% !important;
+        overflow-x: auto !important;
+        white-space: pre !important;
+    }
+
+    /* Tables */
+    [data-testid="stChatMessage"] table {
+        display: block !important;
+        width: 100% !important;
+        overflow-x: auto !important;
+    }
+
+    /* Chat input container */
+    .st-key-chat_input_container {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 12px auto 18px auto !important;
+        padding: 6px !important;
+        box-sizing: border-box !important;
+        border-radius: 19px !important;
+    }
+
+    /* Keep the three chat input columns in one row */
+    .st-key-chat_input_container
+    [data-testid="stHorizontalBlock"] {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        align-items: center !important;
+        gap: 6px !important;
+        width: 100% !important;
+    }
+
+    /* Upload column */
+    .st-key-chat_input_container
+    [data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(1) {
+        flex: 0 0 46px !important;
+        width: 46px !important;
+        min-width: 46px !important;
+    }
+
+    /* Message column */
+    .st-key-chat_input_container
+    [data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(2) {
+        flex: 1 1 auto !important;
+        width: auto !important;
+        min-width: 0 !important;
+    }
+
+    /* Send column */
+    .st-key-chat_input_container
+    [data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(3) {
+        flex: 0 0 46px !important;
+        width: 46px !important;
+        min-width: 46px !important;
+    }
+
+    /* Upload button */
+    .st-key-chat_input_container
+    [data-testid="stFileUploader"],
+    .st-key-chat_input_container
+    [data-testid="stFileUploaderDropzone"],
+    .st-key-chat_input_container
+    [data-testid="stFileUploader"] section,
+    .st-key-chat_input_container
+    [data-testid="stFileUploader"] button {
+        width: 46px !important;
+        min-width: 46px !important;
+        max-width: 46px !important;
+    }
+
+    .st-key-chat_input_container
+    [data-testid="stFileUploader"] button {
+        height: 48px !important;
+        min-height: 48px !important;
+        border-radius: 14px !important;
+    }
+
+    /* Message input */
+    .st-key-chat_input_container
+    [data-testid="stTextInput"] {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .st-key-chat_input_container
+    [data-testid="stTextInput"] > div,
+    .st-key-chat_input_container
+    [data-testid="stTextInput"] > div > div {
+        width: 100% !important;
+        min-width: 0 !important;
+        height: 48px !important;
+        min-height: 48px !important;
+    }
+
+    .st-key-chat_input_container
+    [data-testid="stTextInput"] input {
+        height: 46px !important;
+        min-height: 46px !important;
+        padding: 0 10px !important;
+        font-size: 13px !important;
+    }
+
+    /* Send button */
+    .st-key-chat_input_container
+    [data-testid="stButton"] button {
+        width: 46px !important;
+        min-width: 46px !important;
+        height: 48px !important;
+        min-height: 48px !important;
+        border-radius: 14px !important;
+        font-size: 23px !important;
+    }
+
+    /* Attached image preview */
+    .st-key-uploaded_image_preview {
+        top: -78px !important;
+        left: 5px !important;
+        width: min(210px, calc(100vw - 45px)) !important;
+        max-width: 210px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Personality selector */
+    .st-key-selected_personality {
+        width: 100% !important;
+    }
+
+    /* Sidebar spacing */
+    [data-testid="stSidebar"] .block-container {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    /* Prevent horizontal page scrolling */
+    .stApp,
+    [data-testid="stAppViewContainer"],
+    [data-testid="stMain"] {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+}
+
+
+/* ==========================================
+   SMALL ANDROID PHONES
+========================================== */
+
+@media screen and (max-width: 400px) {
+
+    .main-header h1 {
+        font-size: 25px !important;
+    }
+
+    .welcome-title {
+        font-size: 23px !important;
+    }
+
+    .welcome-container {
+        padding: 20px 10px !important;
+    }
+
+    .st-key-chat_input_container {
+        padding: 5px !important;
+    }
+
+    .st-key-chat_input_container
+    [data-testid="stHorizontalBlock"] {
+        gap: 4px !important;
+    }
+
+    .st-key-chat_input_container
+    [data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(1),
+    .st-key-chat_input_container
+    [data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(3) {
+        flex-basis: 42px !important;
+        width: 42px !important;
+        min-width: 42px !important;
+    }
+
+    .st-key-chat_input_container
+    [data-testid="stFileUploader"] button,
+    .st-key-chat_input_container
+    [data-testid="stButton"] button {
+        width: 42px !important;
+        min-width: 42px !important;
+        max-width: 42px !important;
+    }
+
+    .st-key-chat_input_container
+    [data-testid="stTextInput"] input {
+        font-size: 12px !important;
+        padding: 0 7px !important;
+    }
+
+    [data-testid="stChatMessage"] p {
+        font-size: 13px !important;
+    }
+}
