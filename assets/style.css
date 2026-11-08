@@ -1038,60 +1038,6 @@ button[data-testid="stBaseButton-elementToolbar"]:hover svg {
    MOBILE RESPONSIVENESS
 ================================= */
 
-@media (max-width: 768px) {
-
-    .block-container {
-        padding-top: 1rem;
-        padding-bottom: 2rem;
-    }
-
-    .welcome-title {
-        font-size: 32px;
-    }
-
-    .main-header h1 {
-        font-size: 34px;
-    }
-
-    .welcome-container {
-        margin: 40px auto 25px;
-        padding: 30px 15px;
-    }
-
-    .st-key-chat_input_container {
-        padding: 7px !important;
-        border-radius: 20px !important;
-    }
-
-    .st-key-chat_input_container [data-testid="stHorizontalBlock"] {
-        gap: 6px !important;
-    }
-
-    .st-key-chat_input_container [data-testid="stFileUploader"] button,
-    .st-key-chat_input_container [data-testid="stButton"] button {
-        width: 48px !important;
-        min-width: 48px !important;
-        height: 52px !important;
-        min-height: 52px !important;
-    }
-
-    .st-key-chat_input_container [data-testid="stTextInput"] > div > div {
-        height: 52px !important;
-        min-height: 52px !important;
-    }
-
-    .st-key-chat_input_container [data-testid="stTextInput"] input {
-        height: 50px !important;
-        min-height: 50px !important;
-        padding: 0 12px !important;
-        font-size: 14px !important;
-    }
-
-    .st-key-chat_input_container [data-testid="stFileUploader"] section {
-        height: 52px !important;
-        min-height: 52px !important;
-    }
-}
 
 /* Code Block Background */
 .stCodeBlock,
@@ -1130,275 +1076,352 @@ div[data-testid="stCode"] pre {
     color: #E6D6FF !important;
 }
 
+
 /* ==========================================
    ECHOVERSE AI - ANDROID RESPONSIVE FIX
 ========================================== */
 
 /* Tablets and mobile devices */
-@media screen and (max-width: 768px) {
-
-    /* Main page spacing */
-    .block-container {
-        padding-left: 12px !important;
-        padding-right: 12px !important;
-        padding-top: 12px !important;
-    }
-
-    /* Main heading */
-    .main-header h1 {
-        font-size: 30px !important;
-        line-height: 1.2 !important;
-    }
-
-    .main-header p {
-        font-size: 13px !important;
-        padding: 0 8px !important;
-    }
-
-    /* Welcome screen */
-    .welcome-container {
-        width: 100% !important;
-        margin: 25px auto !important;
-        padding: 24px 14px !important;
-        box-sizing: border-box !important;
-    }
-
-    .welcome-title {
-        font-size: 26px !important;
-        line-height: 1.3 !important;
-    }
-
-    .welcome-subtitle {
-        font-size: 14px !important;
-    }
-
-    .welcome-description {
-        font-size: 13px !important;
-    }
-
-    /* Category cards */
-    .category-card {
-        padding: 14px 8px !important;
-        min-height: 125px !important;
-    }
-
-    .category-card h4 {
-        font-size: 14px !important;
-    }
-
-    .category-card p {
-        font-size: 11px !important;
-    }
-
-    /* Chat messages */
-    [data-testid="stChatMessage"] {
-        padding: 10px !important;
-        gap: 8px !important;
-    }
-
-    [data-testid="stChatMessage"] p {
-        font-size: 14px !important;
-        line-height: 1.65 !important;
-        overflow-wrap: anywhere !important;
-    }
-
-    /* Code blocks */
-    [data-testid="stChatMessage"] pre {
-        max-width: 100% !important;
-        overflow-x: auto !important;
-        white-space: pre !important;
-    }
-
-    /* Tables */
-    [data-testid="stChatMessage"] table {
-        display: block !important;
-        width: 100% !important;
-        overflow-x: auto !important;
-    }
-
-    /* Chat input container */
-    .st-key-chat_input_container {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 12px auto 18px auto !important;
-        padding: 6px !important;
-        box-sizing: border-box !important;
-        border-radius: 19px !important;
-    }
-
-    /* Keep the three chat input columns in one row */
-    .st-key-chat_input_container
-    [data-testid="stHorizontalBlock"] {
-        display: flex !important;
-        flex-wrap: nowrap !important;
-        align-items: center !important;
-        gap: 6px !important;
-        width: 100% !important;
-    }
-
-    /* Upload column */
-    .st-key-chat_input_container
-    [data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(1) {
-        flex: 0 0 46px !important;
-        width: 46px !important;
-        min-width: 46px !important;
-    }
-
-    /* Message column */
-    .st-key-chat_input_container
-    [data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(2) {
-        flex: 1 1 auto !important;
-        width: auto !important;
-        min-width: 0 !important;
-    }
-
-    /* Send column */
-    .st-key-chat_input_container
-    [data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(3) {
-        flex: 0 0 46px !important;
-        width: 46px !important;
-        min-width: 46px !important;
-    }
-
-    /* Upload button */
-    .st-key-chat_input_container
-    [data-testid="stFileUploader"],
-    .st-key-chat_input_container
-    [data-testid="stFileUploaderDropzone"],
-    .st-key-chat_input_container
-    [data-testid="stFileUploader"] section,
-    .st-key-chat_input_container
-    [data-testid="stFileUploader"] button {
-        width: 46px !important;
-        min-width: 46px !important;
-        max-width: 46px !important;
-    }
-
-    .st-key-chat_input_container
-    [data-testid="stFileUploader"] button {
-        height: 48px !important;
-        min-height: 48px !important;
-        border-radius: 14px !important;
-    }
-
-    /* Message input */
-    .st-key-chat_input_container
-    [data-testid="stTextInput"] {
-        width: 100% !important;
-        min-width: 0 !important;
-    }
-
-    .st-key-chat_input_container
-    [data-testid="stTextInput"] > div,
-    .st-key-chat_input_container
-    [data-testid="stTextInput"] > div > div {
-        width: 100% !important;
-        min-width: 0 !important;
-        height: 48px !important;
-        min-height: 48px !important;
-    }
-
-    .st-key-chat_input_container
-    [data-testid="stTextInput"] input {
-        height: 46px !important;
-        min-height: 46px !important;
-        padding: 0 10px !important;
-        font-size: 13px !important;
-    }
-
-    /* Send button */
-    .st-key-chat_input_container
-    [data-testid="stButton"] button {
-        width: 46px !important;
-        min-width: 46px !important;
-        height: 48px !important;
-        min-height: 48px !important;
-        border-radius: 14px !important;
-        font-size: 23px !important;
-    }
-
-    /* Attached image preview */
-    .st-key-uploaded_image_preview {
-        top: -78px !important;
-        left: 5px !important;
-        width: min(210px, calc(100vw - 45px)) !important;
-        max-width: 210px !important;
-        box-sizing: border-box !important;
-    }
-
-    /* Personality selector */
-    .st-key-selected_personality {
-        width: 100% !important;
-    }
-
-    /* Sidebar spacing */
-    [data-testid="stSidebar"] .block-container {
-        padding-left: 12px !important;
-        padding-right: 12px !important;
-    }
-
-    /* Prevent horizontal page scrolling */
-    .stApp,
-    [data-testid="stAppViewContainer"],
-    [data-testid="stMain"] {
-        max-width: 100% !important;
-        overflow-x: hidden !important;
-    }
-}
 
 
 /* ==========================================
    SMALL ANDROID PHONES
 ========================================== */
 
-@media screen and (max-width: 400px) {
 
-    .main-header h1 {
-        font-size: 25px !important;
+/* ==========================================
+   ECHOVERSE AI — CONSOLIDATED RESPONSIVE LAYOUT
+   Keep this as the only mobile breakpoint section.
+========================================== */
+
+/* Prevent padding and wide children from creating page overflow. */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body, .stApp,
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"],
+[data-testid="stMainBlockContainer"] {
+    max-width: 100%;
+}
+
+[data-testid="stMainBlockContainer"] {
+    width: 100%;
+    min-width: 0;
+}
+
+img, video, iframe {
+    max-width: 100%;
+}
+
+/* The chat composer must shrink with its parent. */
+.st-key-chat_input_container {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+}
+
+.st-key-chat_input_container [data-testid="stHorizontalBlock"] {
+    width: 100% !important;
+    min-width: 0 !important;
+}
+
+.st-key-chat_input_container [data-testid="column"] {
+    min-width: 0 !important;
+}
+
+.st-key-chat_input_container [data-testid="stTextInput"],
+.st-key-chat_input_container [data-testid="stTextInput"] > div,
+.st-key-chat_input_container [data-testid="stTextInput"] > div > div {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+}
+
+.st-key-chat_input_container [data-testid="stTextInput"] input {
+    min-width: 0 !important;
+    max-width: 100% !important;
+}
+
+.st-key-chat_input_container [data-testid="stFileUploader"],
+.st-key-chat_input_container [data-testid="stFileUploader"] section {
+    min-width: 0 !important;
+    max-width: 100% !important;
+}
+
+
+/* Category cards share a two-column grid on small screens. */
+@media screen and (max-width: 768px) {
+
+    .block-container {
+        padding: 12px 12px 28px !important;
     }
 
-    .welcome-title {
-        font-size: 23px !important;
+    .main-header {
+        padding: 12px 8px 18px !important;
+    }
+
+    .main-header h1 {
+        font-size: clamp(25px, 7vw, 32px) !important;
+        line-height: 1.15 !important;
+        overflow-wrap: anywhere;
+    }
+
+    .main-header p {
+        font-size: 12px !important;
+        line-height: 1.5 !important;
     }
 
     .welcome-container {
-        padding: 20px 10px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 16px auto 18px !important;
+        padding: 20px 14px !important;
+    }
+
+    .welcome-title {
+        font-size: clamp(22px, 6vw, 28px) !important;
+    }
+
+    .welcome-icon {
+        font-size: 44px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .welcome-description {
+        font-size: 13px !important;
+        line-height: 1.6 !important;
+    }
+
+    /* Streamlit's four columns become a compact 2x2 category grid. */
+    [data-testid="stHorizontalBlock"]:has(.category-card) {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 10px !important;
+    }
+
+    [data-testid="stHorizontalBlock"]:has(.category-card) > [data-testid="column"] {
+        flex: 0 0 calc(50% - 5px) !important;
+        width: calc(50% - 5px) !important;
+        min-width: 0 !important;
+    }
+
+    .category-card {
+        min-height: 0 !important;
+        height: 100% !important;
+        padding: 14px 8px !important;
+        border-radius: 14px !important;
+    }
+
+    .category-icon {
+        font-size: 27px !important;
+        margin-bottom: 5px !important;
+    }
+
+    .category-card h4 {
+        font-size: 13px !important;
+        margin: 4px 0 !important;
+    }
+
+    .category-card p {
+        font-size: 10px !important;
+        line-height: 1.35 !important;
+    }
+
+    [data-testid="stChatMessage"] {
+        padding: 10px !important;
+        border-radius: 14px !important;
+    }
+
+    [data-testid="stChatMessage"] p {
+        font-size: 14px !important;
+        line-height: 1.55 !important;
+        overflow-wrap: anywhere !important;
+    }
+
+    .st-key-chat_input_container {
+        margin: 12px 0 16px !important;
+        padding: 6px !important;
+        border-radius: 17px !important;
+    }
+
+    .st-key-chat_input_container [data-testid="stHorizontalBlock"] {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        align-items: center !important;
+        gap: 6px !important;
+    }
+
+    /* Upload and send columns are fixed; message column takes remaining width. */
+    .st-key-chat_input_container [data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(1),
+    .st-key-chat_input_container [data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(3) {
+        flex: 0 0 42px !important;
+        width: 42px !important;
+        min-width: 42px !important;
+    }
+
+    .st-key-chat_input_container [data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(2) {
+        flex: 1 1 0 !important;
+        width: auto !important;
+        min-width: 0 !important;
+    }
+
+    .st-key-chat_input_container [data-testid="stFileUploader"],
+    .st-key-chat_input_container [data-testid="stFileUploader"] section,
+    .st-key-chat_input_container [data-testid="stFileUploader"] button,
+    .st-key-chat_input_container [data-testid="stButton"] button {
+        width: 42px !important;
+        min-width: 42px !important;
+        max-width: 42px !important;
+        height: 46px !important;
+        min-height: 46px !important;
+        max-height: 46px !important;
+        padding: 0 !important;
+        border-radius: 13px !important;
+    }
+
+    .st-key-chat_input_container [data-testid="stTextInput"] > div > div {
+        height: 46px !important;
+        min-height: 46px !important;
+    }
+
+    .st-key-chat_input_container [data-testid="stTextInput"] input {
+        height: 44px !important;
+        min-height: 44px !important;
+        padding: 0 9px !important;
+        font-size: 13px !important;
+    }
+
+    .st-key-chat_input_container [data-testid="stFileUploader"] section {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .st-key-chat_input_container [data-testid="stFileUploader"] button::after {
+        font-size: 27px !important;
+    }
+
+    .st-key-chat_input_container [data-testid="stButton"] button {
+        font-size: 23px !important;
+    }
+
+    /* Attached image preview stays in normal flow, never overlays controls. */
+    .st-key-uploaded_image_preview {
+        position: relative !important;
+        inset: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 8px 0 0 !important;
+        z-index: 1 !important;
+    }
+
+    /* Don't let fixed/floating widgets cover the bottom of the page. */
+    [data-testid="stChatInput"],
+    [data-testid="stBottom"],
+    [data-testid="stBottomBlockContainer"] {
+        max-width: 100% !important;
+    }
+}
+
+
+/* Narrow phones: reduce side padding, keep the composer usable. */
+@media screen and (max-width: 380px) {
+
+    .block-container {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
     }
 
     .st-key-chat_input_container {
         padding: 5px !important;
     }
 
-    .st-key-chat_input_container
-    [data-testid="stHorizontalBlock"] {
+    .st-key-chat_input_container [data-testid="stHorizontalBlock"] {
         gap: 4px !important;
     }
 
-    .st-key-chat_input_container
-    [data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(1),
-    .st-key-chat_input_container
-    [data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(3) {
-        flex-basis: 42px !important;
-        width: 42px !important;
-        min-width: 42px !important;
+    .st-key-chat_input_container [data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(1),
+    .st-key-chat_input_container [data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(3) {
+        flex-basis: 38px !important;
+        width: 38px !important;
+        min-width: 38px !important;
     }
 
-    .st-key-chat_input_container
-    [data-testid="stFileUploader"] button,
-    .st-key-chat_input_container
-    [data-testid="stButton"] button {
-        width: 42px !important;
-        min-width: 42px !important;
-        max-width: 42px !important;
+    .st-key-chat_input_container [data-testid="stFileUploader"],
+    .st-key-chat_input_container [data-testid="stFileUploader"] section,
+    .st-key-chat_input_container [data-testid="stFileUploader"] button,
+    .st-key-chat_input_container [data-testid="stButton"] button {
+        width: 38px !important;
+        min-width: 38px !important;
+        max-width: 38px !important;
     }
+}
 
-    .st-key-chat_input_container
-    [data-testid="stTextInput"] input {
-        font-size: 12px !important;
-        padding: 0 7px !important;
-    }
 
-    [data-testid="stChatMessage"] p {
-        font-size: 13px !important;
+/* Desktop floating preview retains its original floating position. */
+@media screen and (min-width: 769px) {
+
+    .st-key-uploaded_image_preview {
+        position: absolute !important;
+        top: -88px !important;
+        left: 15px !important;
+        width: 245px !important;
+        max-width: 245px !important;
+        z-index: 1000 !important;
     }
+}
+
+/* =========================================
+   ECHOVERSE AI - REACT ARIA DROPDOWN
+   Fix white background of Friendly selector
+========================================= */
+
+/* Dropdown input */
+input[role="combobox"][aria-label="Choose how EchoVerse AI behaves:"] {
+    background: #1e1e2e !important;
+    background-color: #1e1e2e !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    caret-color: #ffffff !important;
+}
+
+/* Dropdown's surrounding container */
+div:has(> input[role="combobox"][aria-label="Choose how EchoVerse AI behaves:"]) {
+    background: #1e1e2e !important;
+    background-color: #1e1e2e !important;
+    border: 1px solid #44445a !important;
+    border-radius: 10px !important;
+    box-shadow: none !important;
+}
+
+/* Focused dropdown */
+input[role="combobox"][aria-label="Choose how EchoVerse AI behaves:"]:focus {
+    background-color: #1e1e2e !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    outline: none !important;
+}
+
+/* Dropdown options */
+[role="listbox"] {
+    background-color: #1e1e2e !important;
+    border: 1px solid #44445a !important;
+}
+
+[role="option"] {
+    background-color: #1e1e2e !important;
+    color: #ffffff !important;
+}
+
+[role="option"]:hover,
+[role="option"][aria-selected="true"] {
+    background-color: #34344a !important;
+    color: #ffffff !important;
 }
